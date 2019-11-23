@@ -88,6 +88,12 @@
                     <img src="{{ "images/twitter.png" | absURL }}" class="avatar" width="35" height="35">
                 </a>
                 {{ end }}
+                {{ if .Site.Params.Linkedin}}
+                <a class="avatar-group-item" data-hovercard-type="organization"
+                    href="https://linkedin.com/{{ .Site.Params.Linkedin }}">
+                    <img src="{{ "images/linkedin.png" | absURL }}" class="avatar" width="35" height="35">
+                </a>
+                {{ end }}
             </div>
 
             <div data-test-selector="profile-sponsorships">
